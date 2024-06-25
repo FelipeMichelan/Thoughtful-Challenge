@@ -1,0 +1,338 @@
+V 0.0.4
+T 2024-06-25T00:51:47.860+00:00
+ID 1|19ee28c5-328d-11ef-9541-010101010000
+I "sys.platform=win32"
+I "python=3.10.12 | packaged by conda-forge | (main, Jun 23 2023, 22:34:57) [MSC v.1936 64 bit (AMD64)]"
+M a:"tasks.py - minimal_task"
+SR a|0.008
+M c:"Collect tasks"
+M d:"setup"
+M e:""
+P b:c|d|e|e|0
+ST b|0.008
+M f:"regular"
+M g:"\nCollecting task minimal_task from: c:\\Python\\Thoughtful AI Challenge\\tasks.py\n"
+C f|g|0.009
+M h:"stderr"
+M i:"2024-06-24 21:51:49,518 - RPA.core.certificates - INFO - Truststore injection done, using system certificate store to validate HTTPS.\n"
+C h|i|1.659
+M j:"PASS"
+ET j|e|2.431
+M l:"minimal_task"
+M m:"tasks"
+M n:"c:\\Python\\Thoughtful AI Challenge\\tasks.py"
+M o:null
+P k:l|m|n|o|13
+ST k|2.431
+M p:"============================ "
+C f|p|2.431
+M q:"Running: "
+C f|q|2.432
+M r:"task_name"
+C r|l|2.432
+M s:" =============================\n"
+C f|s|2.432
+M t:"METHOD"
+SE k|t|2.434
+M u:"FileNotFoundError: [Errno 2] No such file or directory: 'C:\\\\output\\\\log.txt'"
+STB u|2.434
+M v:"c:\\ProgramData\\robocorp\\ht\\9a736f0_b1f3c24_691db988\\lib\\site-packages\\robocorp\\tasks\\_task.py"
+M w:"run"
+M x:"return self.method(**kwargs)"
+TBE v|57|w|x
+M y:"self"
+M z:"Task"
+M A:"Task(minimal_task, status: NOT_RUN)"
+TBV y|z|A
+M B:"kwargs"
+M C:"dict"
+M D:"{}"
+TBV B|C|D
+M E:"sig"
+M F:"Signature"
+M G:"<Signature ()>"
+TBV E|F|G
+M H:"logging.basicConfig(level=logging.INFO, filename=\"/output/log.txt\", format=\"%(asctime)s - %(levelname)s - %(message)s\")"
+TBE n|14|l|H
+M I:"c:\\ProgramData\\robocorp\\ht\\9a736f0_b1f3c24_691db988\\lib\\logging\\__init__.py"
+M J:"basicConfig"
+M K:"h = FileHandler(filename, mode,"
+TBE I|2040|J|K
+M L:"{'level': 20, 'format': '%(asctime)s - %(levelname)s - %(message)s'}"
+TBV B|C|L
+M M:"force"
+M N:"bool"
+M O:"False"
+TBV M|N|O
+M P:"encoding"
+M Q:"str"
+M R:"'locale'"
+TBV P|Q|R
+M S:"errors"
+M T:"'backslashreplace'"
+TBV S|Q|T
+M U:"handlers"
+M V:"NoneType"
+M W:"None"
+TBV U|V|W
+M X:"filename"
+M Y:"'/output/log.txt'"
+TBV X|Q|Y
+M Z:"mode"
+M 0:"'a'"
+TBV Z|Q|0
+M 1:"__init__"
+M 2:"StreamHandler.__init__(self, self._open())"
+TBE I|1169|1|2
+M 3:"FileHandler"
+M 4:"<error getting repr: 'FileHandler' object has no attribute 'level'>"
+TBV y|3|4
+TBV X|Q|Y
+TBV Z|Q|0
+TBV P|Q|R
+M 5:"delay"
+TBV 5|N|O
+TBV S|Q|T
+M 6:"_open"
+M 7:"return open_func(self.baseFilename, self.mode,"
+TBE I|1201|6|7
+TBV y|3|4
+M 8:"open_func"
+M 9:"builtin_function_or_method"
+M aa:"<built-in function open>"
+TBV 8|9|aa
+ETB 2.444
+M ab:"ERROR"
+EE t|ab|2.444
+C r|l|2.445
+M ac:" status: "
+C f|ac|2.445
+M ad:"error"
+M ae:"FAIL\n"
+C ad|ae|2.446
+M af:"\n[Errno 2] No such file or directory: 'C:\\\\output\\\\log.txt'\n"
+C ad|af|2.446
+M ag:"==================== "
+C f|ag|2.447
+M ah:"Full Traceback (running "
+C f|ah|2.447
+C r|l|2.448
+M ai:")"
+C f|ai|2.448
+M aj:" =====================\n"
+C f|aj|2.449
+M ak:"traceback"
+M al:"Traceback (most recent call last):\n  File \"c:\\ProgramData\\robocorp\\ht\\9a736f0_b1f3c24_691db988\\lib\\site-packages\\robocorp\\tasks\\_commands.py\", line 453, in run\n    result = task.run(**kwargs)\n  File \"c:\\ProgramData\\robocorp\\ht\\9a736f0_b1f3c24_691db988\\lib\\site-packages\\robocorp\\tasks\\_task.py\", line 57, in run\n    return self.method(**kwargs)\n  File \"c:\\Python\\Thoughtful AI Challenge\\tasks.py\", line 14, in minimal_task\n    logging.basicConfig(level=logging.INFO, filename=\"/output/log.txt\", format=\"%(asctime)s - %(levelname)s - %(message)s\")\n  File \"c:\\ProgramData\\robocorp\\ht\\9a736f0_b1f3c24_691db988\\lib\\logging\\__init__.py\", line 2040, in basicConfig\n    h = FileHandler(filename, mode,\n  File \"c:\\ProgramData\\robocorp\\ht\\9a736f0_b1f3c24_691db988\\lib\\logging\\__init__.py\", line 1169, in __init__\n    StreamHandler.__init__(self, self._open())\n  File \"c:\\ProgramData\\robocorp\\ht\\9a736f0_b1f3c24_691db988\\lib\\logging\\__init__.py\", line 1201, in _open\n    return open_func(self.baseFilename, self.mode,\nFileNotFoundError: [Errno 2] No such file or directory: 'C:\\\\output\\\\log.txt'\n\n"
+C ak|al|2.451
+M am:"================================================================================\n"
+C f|am|2.454
+M an:"FAIL"
+M ao:"[Errno 2] No such file or directory: 'C:\\\\output\\\\log.txt'"
+ET an|ao|2.455
+M aq:"Teardown tasks"
+M ar:"teardown"
+P ap:aq|ar|e|e|0
+ST ap|2.455
+M as:"Process snapshot"
+SPS as|2.456
+M at:"System information:\nMemory: Total: 7.9 G, Available: 1.6 G, Used: 79.8 %\nCPUs: 8"
+P au:e|e|e|e|0
+L I|at|au|0|2.499
+M av:"Current Process: python.exe (pid: 11716, status: running)\nCommand Line: c:\\ProgramData\\robocorp\\ht\\9a736f0_b1f3c24_691db988\\python.exe -m robocorp.tasks run c:\\Python\\Thoughtful AI Challenge\\tasks.py -t minimal_task\nStarted: 21:51:47\nParent pid: 23196\nResident Set Size: 64.1 M\nVirtual Memory Size: 50.7 M"
+L I|av|au|0|2.527
+M aw:"OutputToPortThread|Thread ID: 25856 (daemon)"
+STD aw|2.527
+M ax:"c:\\ProgramData\\robocorp\\ht\\9a736f0_b1f3c24_691db988\\lib\\threading.py"
+M ay:"_bootstrap"
+M az:"self._bootstrap_inner()"
+TBE ax|973|ay|az
+M aA:"Thread"
+M aB:"<Thread(OutputToPortThread, started daemon 25856)>"
+TBV y|aA|aB
+M aC:"_bootstrap_inner"
+M aD:"self.run()"
+TBE ax|1016|aC|aD
+TBV y|aA|aB
+M aE:"self._target(*self._args, **self._kwargs)"
+TBE ax|953|w|aE
+TBV y|aA|aB
+M aF:"c:\\ProgramData\\robocorp\\ht\\9a736f0_b1f3c24_691db988\\lib\\site-packages\\robocorp\\tasks\\_log_output_setup.py"
+M aG:"write_in_thread"
+M aH:"msg = q.get()"
+TBE aF|73|aG|aH
+M aI:"msg"
+M aJ:"'ST ap|2.446\\n'"
+TBV aI|Q|aJ
+M aK:"client_socket"
+M aL:"socket"
+M aM:"<socket.socket fd=720, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51877), raddr=('127.0.0.1', 64367)>"
+TBV aK|aL|aM
+M aN:"log"
+M aO:"module"
+M aP:"<module 'robocorp.log' from 'c:\\\\ProgramData\\\\robocorp\\\\ht\\\\9a736f0_b1f3c24_691db988\\\\lib\\\\site-packages\\\\robocorp\\\\log\\\\__init__.py'>"
+TBV aN|aO|aP
+M aQ:"port_in_env"
+M aR:"'64367'"
+TBV aQ|Q|aR
+M aS:"q"
+M aT:"Queue"
+M aU:"<queue.Queue object at 0x000001C641AF8B20>"
+TBV aS|aT|aU
+M aV:"c:\\ProgramData\\robocorp\\ht\\9a736f0_b1f3c24_691db988\\lib\\queue.py"
+M aW:"get"
+M aX:"self.not_empty.wait()"
+TBE aV|171|aW|aX
+TBV y|aT|aU
+M aY:"block"
+M aZ:"True"
+TBV aY|N|aZ
+M a0:"timeout"
+TBV a0|V|W
+M a1:"wait"
+M a2:"waiter.acquire()"
+TBE ax|320|a1|a2
+M a3:"Condition"
+M a4:"<Condition(<unlocked _thread.lock object at 0x000001C641ADDC80>, 1)>"
+TBV y|a3|a4
+TBV a0|V|W
+M a5:"waiter"
+M a6:"lock"
+M a7:"<locked _thread.lock object at 0x000001C64358EE00>"
+TBV a5|a6|a7
+M a8:"saved_state"
+TBV a8|V|W
+M a9:"gotit"
+TBV a9|N|O
+ETD 2.532
+M ba:"MainThread|Thread ID: 25980 (non daemon)"
+STD ba|2.532
+M bb:"c:\\ProgramData\\robocorp\\ht\\9a736f0_b1f3c24_691db988\\lib\\site-packages\\robocorp\\log\\__init__.py"
+M bc:"process_snapshot"
+M bd:"robo_logger.process_snapshot()"
+TBE bb|270|bc|bd
+M be:"logger_instances"
+M bf:"{<robocorp.log._robo_logger._RoboLogger object at 0x000001C641AB4850>: 1, <robocorp.log._robo_logger._RoboLogger object at 0x000001C641AF8EB0>: 1}"
+TBV be|C|bf
+M bg:"robo_logger"
+M bh:"_RoboLogger"
+M bi:"<robocorp.log._robo_logger._RoboLogger object at 0x000001C641AB4850>"
+TBV bg|bh|bi
+M bj:"c:\\ProgramData\\robocorp\\ht\\9a736f0_b1f3c24_691db988\\lib\\site-packages\\robocorp\\log\\_robo_logger.py"
+M bk:"new_func"
+M bl:"return func(self, *args, **kwargs)"
+TBE bj|20|bk|bl
+TBV y|bh|bi
+M bm:"args"
+M bn:"tuple"
+M bo:"()"
+TBV bm|bn|bo
+TBV B|C|D
+M bp:"func"
+M bq:"function"
+M br:"<function _RoboLogger.process_snapshot at 0x000001C641AAEF80>"
+TBV bp|bq|br
+M bs:"return self._robot_output_impl.process_snapshot(hide_vars)"
+TBE bj|416|bc|bs
+TBV y|bh|bi
+M bt:"hide_vars"
+TBV bt|N|O
+M bu:"c:\\ProgramData\\robocorp\\ht\\9a736f0_b1f3c24_691db988\\lib\\site-packages\\robocorp\\log\\_robo_output_impl.py"
+M bv:"self._dump_threads(hide_vars)"
+TBE bu|748|bc|bv
+TBV bt|N|O
+TBV aN|aO|aP
+M bw:"entry_id"
+M bx:"'ps_1'"
+TBV bw|Q|bx
+M by:"entry_type"
+M bz:"'process_snapshot'"
+TBV by|Q|bz
+M bA:"psutil"
+M bB:"<module 'psutil' from 'c:\\\\ProgramData\\\\robocorp\\\\ht\\\\9a736f0_b1f3c24_691db988\\\\lib\\\\site-packages\\\\psutil\\\\__init__.py'>"
+TBV bA|aO|bB
+M bC:"AccessDenied"
+M bD:"type"
+M bE:"<class 'psutil.AccessDenied'>"
+TBV bC|bD|bE
+M bF:"NoSuchProcess"
+M bG:"<class 'psutil.NoSuchProcess'>"
+TBV bF|bD|bG
+M bH:"ZombieProcess"
+M bI:"<class 'psutil.ZombieProcess'>"
+TBV bH|bD|bI
+M bJ:"curr_process"
+M bK:"Process"
+M bL:"psutil.Process(pid=11716, name='python.exe', status='running', started='21:51:47')"
+TBV bJ|bK|bL
+M bM:"log_info"
+M bN:"<function _RoboOutputImpl.process_snapshot.<locals>.log_info at 0x000001C643B46680>"
+TBV bM|bq|bN
+M bO:"memory_info"
+M bP:"'Total: 7.9 G, Available: 1.6 G, Used: 79.8 %'"
+TBV bO|Q|bP
+M bQ:"child_i"
+M bR:"int"
+M bS:"0"
+TBV bQ|bR|bS
+M bT:"child"
+TBV bT|bK|bL
+M bU:"name"
+M bV:"'python.exe'"
+TBV bU|Q|bV
+M bW:"status"
+M bX:"'running'"
+TBV bW|Q|bX
+M bY:"create_time"
+M bZ:"'21:51:47'"
+TBV bY|Q|bZ
+M b0:"ppid"
+M b1:"'23196'"
+TBV b0|Q|b1
+M b2:"cmdline"
+M b3:"'c:\\\\ProgramData\\\\robocorp\\\\ht\\\\9a736f0_b1f3c24_691db988\\\\python.exe -m robocorp.tasks run c:\\\\Python\\\\Thoughtful AI Challenge\\\\tasks.py -t minimal_task'"
+TBV b2|Q|b3
+M b4:"rss"
+M b5:"'64.1 M'"
+TBV b4|Q|b5
+M b6:"vms"
+M b7:"'50.7 M'"
+TBV b6|Q|b7
+M b8:"proc_memory_info"
+M b9:"pmem"
+M ca:"pmem(rss=67239936, vms=53198848, num_page_faults=18495, peak_wset=67833856, wset=67239936, peak_paged_pool=193120, paged_pool=192944, peak_nonpaged_pool=27272, nonpaged_pool=25000, pagefile=53198848, peak_pagefile=53768192, private=53198848)"
+TBV b8|b9|ca
+M cb:"message"
+M cc:"'Current Process: python.exe (pid: 11716, status: running)\\nCommand Line: c:\\\\ProgramData\\\\robocorp\\\\ht\\\\9a736f0_b1f3c24_691db988\\\\python.exe -m robocorp.tasks run c:\\\\Python\\\\Thoughtful AI Challenge\\\\tasks.py -t minimal_task\\nStarted: 21:51:47\\nParent pid: 23196\\nResident Set Size: 64.1 M\\nVirtual Memory Size: 50.7 M'"
+TBV cb|Q|cc
+M cd:"_RoboOutputImpl"
+M ce:"<robocorp.log._robo_output_impl._RoboOutputImpl object at 0x000001C641AB6A10>"
+TBV y|cd|ce
+M cf:"_dump_threads"
+M cg:"stack.append((f, f.f_lineno))"
+TBE bu|769|cf|cg
+TBV y|cd|ce
+TBV bt|N|O
+M ch:"thread_id"
+M ci:"25980"
+TBV ch|bR|ci
+M cj:"frame"
+M ck:"<frame at 0x000001C643BC8040, file 'c:\\\\ProgramData\\\\robocorp\\\\ht\\\\9a736f0_b1f3c24_691db988\\\\lib\\\\site-packages\\\\robocorp\\\\log\\\\_robo_output_impl.py', line 773, code _dump_threads>"
+TBV cj|cj|ck
+M cl:"thread"
+M cm:"_MainThread"
+M cn:"<_MainThread(MainThread, started 25980)>"
+TBV cl|cm|cn
+M co:"title"
+M cp:"'MainThread|Thread ID: 25980 (non daemon)'"
+TBV co|Q|cp
+M cq:"f"
+M cr:"<frame at 0x000001C63FA28040, file 'c:\\\\ProgramData\\\\robocorp\\\\ht\\\\9a736f0_b1f3c24_691db988\\\\lib\\\\site-packages\\\\robocorp\\\\tasks\\\\_commands.py', line 494, code run>"
+TBV cq|cj|cr
+M cs:"stack"
+M ct:"list"
+M cu:"[(<frame at 0x000001C643A22BC0, file 'c:\\\\ProgramData\\\\robocorp\\\\ht\\\\9a736f0_b1f3c24_691db988\\\\lib\\\\site-packages\\\\robocorp\\\\log\\\\__init__.py', line 270, code process_snapshot>, 270), (<frame at 0x000001C64190A240, file 'c:\\\\ProgramData\\\\robocorp\\\\ht\\\\9a736f0_b1f3c24_691db988\\\\lib\\\\site-packages\\\\robocorp\\\\log\\\\_robo_logger.py', line 20, code new_func>, 20), (<frame at 0x000001C6437765A0, file 'c:\\\\ProgramData\\\\robocorp\\\\ht\\\\9a736f0_b1f3c24_691db988\\\\lib\\\\site-packages\\\\robocorp\\\\log\\\\_robo_logger.py', line 416, code process_snapshot>, 416), (<frame at 0x000001C642578D50, file 'c:\\\\ProgramData\\\\robocorp\\\\ht\\\\9a736f0_b1f3c24_691db988\\\\lib\\\\site-packages\\\\robocorp\\\\log\\\\_robo_output_impl.py', line 748, code process_snapshot>, 748), (<frame at 0x000001C643BC8040, file 'c:\\\\ProgramData\\\\robocorp\\\\ht\\\\9a736f0_b1f3c24_691db988\\\\lib\\\\site-packages\\\\robocorp\\\\log\\\\_robo_output_impl.py', line 773, code _dump_threads>, 769)]"
+TBV cs|ct|cu
+ETD 2.545
+EPS 2.545
+ET j|e|2.588
+ER ab|2.588
